@@ -1,0 +1,29 @@
+.person_block {
+   padding: 10px;
+   border: 1px solid;
+   border-radius: 8px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   max-width: 250px;
+}
+.wrapper {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   gap: 20px;
+   margin: 0 auto;
+}
+.person_photo {
+   width: 150px;
+   height: 150px;
+   border: 1px solid ;
+   border-radius: 50%;
+}
+.person_photo img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border: 1px solid ;
+   border-radius: 50%;
+}
