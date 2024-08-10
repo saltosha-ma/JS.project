@@ -1,0 +1,29 @@
+.wrapper {
+   background-color: silver;
+   padding: 20px;
+   border-radius: 10px;
+   display: flex;
+   width: 100%;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 20px;
+}
+button {
+   padding: 20px;
+   width: 100px;
+   background-color: yellow;
+   border-radius: 8px;
+
+}
+body {
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+}
+
+.red {
+   background-color: red;
+}
