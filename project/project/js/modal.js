@@ -23,7 +23,7 @@ modal.onclick = (event) => {
    }
 }
 
-setTimeout(openModal, 4000)
+setTimeout(openModal, 10000)
 
 
 const handleScroll = () => {
