@@ -1,0 +1,29 @@
+[
+   {
+      "name": "Saltanat",
+      "age": 16,
+      "married": false,
+      "siblings": {
+         "sister": "Salamat",
+         "brother": "Bekbolot"
+      }
+   },
+   {
+      "name": "Dastan",
+      "age": 17,
+      "married": false,
+      "siblings": {
+         "sister": false,
+         "brother": true
+      }
+   },
+   {
+      "name": "Asel",
+      "age": 46,
+      "married": true,
+      "siblings": {
+         "sister": true,
+         "brother": false
+      }
+   }
+]

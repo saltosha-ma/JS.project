@@ -1,0 +1,14 @@
+.cards {
+   width: 300px;
+   display: inline-block;
+   justify-content: space-between;
+   
+}
+.person__photo{
+   height: 200px;
+}
+#info {
+   width: 50px;
+   background-color: pink;
+   color: white;
+}
