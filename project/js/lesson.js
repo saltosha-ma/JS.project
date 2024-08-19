@@ -100,3 +100,49 @@ const converter = (element, targetElement1, targetElement2) => {
 converter(somInput, usdInput, eurInput)
 converter(usdInput, somInput, eurInput)
 converter(eurInput, somInput, usdInput)
+
+// CARD SWITCHER
+
+
+const cardBlock = document.querySelector('.card')
+const btnNext = document.querySelector('#btn-next')
+const btnPrev = document.querySelector('#btn-prev')
+
+let cardId = 1
+
+const fetchCardData = (id) => {
+   fetch(`https://jsonplaceholder.typicode.com/todos/${id}`)
+      .then(response => response.json())
+      .then(data => {
+            cardBlock.innerHTML =`
+               <p>${data.title}</p>
+               <p style="color: ${data.completed ? 'green' : 'red'}">${data.completed}</p>
+               <span>${data.id}</span>
+            ` 
+      })
+}
+
+fetchCardData(cardId)
+
+btnNext.onclick = () => {
+    cardId++
+    if (cardId > 200) cardId = 1 
+    fetchCardData(cardId)
+}
+
+btnPrev.onclick = () => {
+    cardId--
+    if (cardId < 1) cardId = 200
+    fetchCardData(cardId)
+}
+
+
+// 2.
+
+
+fetch(`https://jsonplaceholder.typicode.com/posts`)
+   .then(response => response.json())
+   .then(data => {
+      console.log(data);
+      
+   })
